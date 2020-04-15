@@ -24,38 +24,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-//        String url = "https://api.openweathermap.org/data/2.5/weather?q=madurai,tamilnadu&appid=ac7f8536f0280705e0a21ca710c76f56";
-//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
-//                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-//
-//                    @Override
-//                    public void onResponse(JSONObject response) {
-//                        textView.setText("Response: " + response.toString());
-//                    }
-//                }, new Response.ErrorListener() {
-//
-//
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        textView.setText("error man..."+error.getMessage());
-//
-//                    }
-//                });
-//
-//// Access the RequestQueue through your singleton class.
-//        MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
-
-
-
-
-    }
+                                                }
     public  void getInfo(View view){
         EditText cityName=(EditText)findViewById(R.id.cityName);
         Intent intent=new Intent(this.getApplicationContext(),infoActivity.class);
 
         intent.putExtra("cityName",cityName.getText().toString());
+        startActivity(intent);
+    }
+    public void viewListOfCities(View view){
+        Intent intent=new Intent(this.getApplicationContext(),cityListActivity.class);
         startActivity(intent);
     }
 }
