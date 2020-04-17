@@ -1,21 +1,23 @@
+package com.example.weatherapp;
+
 import java.util.ArrayList;
 
 public class City {
     String name;
     String city;
     int temp;
-//    ArrayList<City> listOfCities=new ArrayList<>();
-//    public void addCity(City city){
+//    ArrayList<com.example.weatherapp.City> listOfCities=new ArrayList<>();
+//    public void addCity(com.example.weatherapp.City city){
 //        listOfCities.add(city);
 //    }
-//    public ArrayList<City> getListOfCities() {
+//    public ArrayList<com.example.weatherapp.City> getListOfCities() {
 //        return listOfCities;
 //    }
 
     public City() {
     }
 
-//    public void setListOfCities(ArrayList<City> listOfCities) {
+//    public void setListOfCities(ArrayList<com.example.weatherapp.City> listOfCities) {
 //        this.listOfCities = listOfCities;
 //    }
 

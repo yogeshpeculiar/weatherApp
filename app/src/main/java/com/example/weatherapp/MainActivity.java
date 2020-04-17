@@ -58,4 +58,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("cityName",cityName.getText().toString());
         startActivity(intent);
     }
+    public void viewListOfCities(View view){
+        Intent intent=new Intent(this.getApplicationContext(),cityList.class);
+        startActivity(intent);
+    }
 }

@@ -16,5 +16,11 @@
        android:onClick="getInfo"
         android:text="getInfo"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewListOfCities"
+        android:text="View List of Cities"
+        />
 
 </LinearLayout>
