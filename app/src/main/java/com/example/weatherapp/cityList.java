@@ -34,7 +34,7 @@ public class cityList extends AppCompatActivity {
     static JSONObject storedResponse = new JSONObject();
 
     public void getCitiesFromAPI() {
-        String url = "https://api.openaq.org/v1/cities?country=IN&limit=20";
+        String url = "https://api.openaq.org/v1/cities?country=IN&limit=30";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 

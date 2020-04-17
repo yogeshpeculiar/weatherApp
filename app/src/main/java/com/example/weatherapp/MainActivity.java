@@ -62,4 +62,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this.getApplicationContext(),cityList.class);
         startActivity(intent);
     }
+    public void implementRecyclerView(View view){
+        Intent intent=new Intent(this.getApplicationContext(),RecylerViewImplementation.class);
+        startActivity(intent);
+    }
 }
