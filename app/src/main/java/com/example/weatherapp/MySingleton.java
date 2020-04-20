@@ -14,7 +14,7 @@ public class MySingleton {
     private static Context ctx;
 
     private MySingleton(Context context) {
-        ctx = context;
+        ctx = context.getApplicationContext();
         requestQueue = getRequestQueue();
 
 //        imageLoader = new ImageLoader(requestQueue,

@@ -28,7 +28,7 @@ public class GetCities {
         JSONObject jsonObject=null;
         JSONObject temp=null;
         try {
-            response = getCityFromApi.execute("https://api.openaq.org/v1/cities?country=IN&limit=100").get();
+            response = getCityFromApi.execute("https://api.openaq.org/v1/cities?country=IN&limit=50").get();
 
             jsonObject = new JSONObject(response);
             JSONArray jsonArray = jsonObject.getJSONArray("results");
