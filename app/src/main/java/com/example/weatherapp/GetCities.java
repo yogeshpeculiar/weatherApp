@@ -28,14 +28,14 @@ public class GetCities {
         JSONObject jsonObject=null;
         JSONObject temp=null;
         try {
-            response = getCityFromApi.execute("https://api.openaq.org/v1/cities?country=IN&limit=30").get();
+            response = getCityFromApi.execute("https://api.openaq.org/v1/cities?country=IN&limit=100").get();
 
             jsonObject = new JSONObject(response);
             JSONArray jsonArray = jsonObject.getJSONArray("results");
             for(int i=2;i<jsonArray.length();i++) {
                 boolean isExists=false;
                 for(int j=0;j<i;j++) {
-                    if (jsonArray.getJSONObject(i).getString("city").indexOf(jsonArray.getJSONObject(j).getString("city")) != -1) {
+                    if (jsonArray.getJSONObject(i).getString("city").toLowerCase().indexOf(jsonArray.getJSONObject(j).getString("city").toLowerCase()) != -1) {
                         isExists = true;
 
                     }}

@@ -109,7 +109,7 @@ public class cityList extends AppCompatActivity {
 public void showMoreInfo(String selectedString){
         Intent intent=new Intent(this.getApplicationContext(),showDetailsOfTheCity.class);
         intent.putExtra("selectedCity",selectedString);
-    startActivity(intent);
+        startActivity(intent);
 }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

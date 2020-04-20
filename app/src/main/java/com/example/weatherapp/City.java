@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class City {
     String name;
     String city;
-    int temp;
+    double temp;
 //    ArrayList<com.example.weatherapp.City> listOfCities=new ArrayList<>();
 //    public void addCity(com.example.weatherapp.City city){
 //        listOfCities.add(city);
@@ -21,7 +21,7 @@ public class City {
 //        this.listOfCities = listOfCities;
 //    }
 
-    public City(String name, String city, int temp) {
+    public City(String name, String city, double temp) {
         this.name = name;
         this.city = city;
         this.temp = temp;
@@ -43,11 +43,11 @@ public class City {
         this.city = city;
     }
 
-    public int getTemp() {
+    public double getTemp() {
         return temp;
     }
 
-    public void setTemp(int temp) {
+    public void setTemp(double temp) {
         this.temp = temp;
     }
 
